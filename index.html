@@ -5,16 +5,15 @@
   <title>Pape Faye - PhD Student</title>
   <style>
     body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      height: 100%;
+      margin: 0; padding: 0; height: 100%;
+      font-family: Arial, sans-serif;
     }
 
     .hero {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Neuromuscular_junction-en.svg/1920px-Neuromuscular_junction-en.svg.png');
-      background-size: cover;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Skeletal_muscle_and_nerve_diagram-en.svg');
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -23,127 +22,36 @@
       color: white;
       text-align: center;
       position: relative;
+      background-color: #000; /* pour mieux voir l’image */
     }
 
-    /* Overlay supprimé temporairement */
-
     .hero-content {
-      z-index: 2;
       position: relative;
+      z-index: 1;
+      background: rgba(0,0,0,0.4); /* léger fond pour le texte */
+      padding: 20px;
+      border-radius: 10px;
     }
 
     .hero h1 {
-      font-size: 4em;
+      font-size: 3em;
       margin: 0;
-      text-shadow: 2px 2px 6px black;
     }
 
     .hero p {
-      font-size: 1.5em;
+      font-size: 1.3em;
       margin-top: 10px;
-      text-shadow: 1px 1px 4px black;
-    }
-
-    .hero a.button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      border: 2px solid white;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: background 0.3s, color 0.3s;
-      text-shadow: none;
-    }
-
-    .hero a.button:hover {
-      background: white;
-      color: #333;
-    }
-
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      z-index: 3;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-      text-shadow: 1px 1px 3px black;
-    }
-
-    nav a:hover {
-      color: #00bfff;
-    }
-
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      margin-bottom: 20px;
-      color: #2b6cb0;
-    }
-
-    section p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.2em;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
     }
   </style>
 </head>
 <body>
 
   <div class="hero">
-    <!-- Overlay retiré -->
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
     <div class="hero-content">
       <h1>Hello I'm Pape Faye</h1>
       <p>PhD Student | Neuromuscular diseases | Molecular biology</p>
-      <a href="#about" class="button">About Me</a>
     </div>
   </div>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a PhD student focused on using transcriptomic signatures to diagnose rare neuromuscular diseases. Passionate about understanding molecular dysfunction at the neuromuscular junction, and bridging research with clinical applications.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Research on transcriptomics, molecular pathways in neuromuscular junction, and bioinformatics tools to analyze large-scale data.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p>PhD in Molecular Biology | Master in Neuroscience | Specialized training in bioinformatics and data analysis.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Connect with me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> or <a href="mailto:your.email@example.com">send me an email</a>.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Pape Faye. All rights reserved.
-  </footer>
 
 </body>
 </html>
