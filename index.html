@@ -8,11 +8,11 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      color: white;
-      height: 100%;
-      overflow-x: hidden;
+      scroll-behavior: smooth;
     }
-    header {
+
+    /* Header Hero Section */
+    .hero {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Neuromuscular_junction-en.svg/1920px-Neuromuscular_junction-en.svg.png');
       background-size: cover;
       background-position: center;
@@ -21,76 +21,135 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      color: white;
       text-align: center;
-      backdrop-filter: brightness(0.7);
+      position: relative;
     }
-    header h1 {
-      font-size: 3em;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 4em;
       margin: 0;
     }
-    header p {
+
+    .hero p {
       font-size: 1.5em;
-      max-width: 600px;
-      margin: 20px auto 0;
+      margin-top: 10px;
     }
-    section {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #00bfff;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-    .contacts a {
-      display: inline-block;
-      margin: 10px;
+
+    .hero a.button {
+      margin-top: 20px;
       padding: 10px 20px;
-      background-color: #00bfff;
+      border: 2px solid white;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .hero a.button:hover {
+      background: white;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 3;
+    }
+
+    nav a {
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
     }
-    .contacts a:hover {
-      background-color: #009acd;
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #2b6cb0;
+    }
+
+    section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Pape Faye</h1>
-    <p>I’m a PhD student focused on using transcriptomic signatures to diagnose rare neuromuscular diseases.</p>
-  </header>
 
-  <section>
-    <h2>My Interests</h2>
-    <ul>
-      <li>Research</li>
-      <li>Molecular biology</li>
-      <li>Neuromuscular junction</li>
-      <li>Teaching</li>
-      <li>Traveling</li>
-      <li>Bioinformatics</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="contacts">
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">GitHub</a>
-      <a href="pape-ibrahima.FAYE@etu.univ-amu.fr">Email</a>
+  <div class="hero">
+    <div class="overlay"></div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Hello I'm Pape</h1>
+      <p>PhD Student | Neuromuscular diseases | Molecular biology</p>
+      <a href="#about" class="button">About Me</a>
     </div>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a PhD student focused on using transcriptomic signatures to diagnose rare neuromuscular diseases. Passionate about understanding molecular dysfunction at the neuromuscular junction, and bridging research with clinical applications.</p>
   </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Research on transcriptomics, molecular pathways in neuromuscular junction, and bioinformatics tools to analyze large-scale data.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>PhD in Molecular Biology | Master in Neuroscience | Specialized training in bioinformatics and data analysis.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Connect with me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> or <a href="mailto:your.email@example.com">send me an email</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Pape Faye. All rights reserved.
+  </footer>
+
 </body>
 </html>
