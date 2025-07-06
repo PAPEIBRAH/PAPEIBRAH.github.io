@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pape Faye - Welcome</title>
+  <meta charset="UTF-8" />
+  <title>Pape Faye - PhD Student</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      height: 100%;
+      overflow-x: hidden;
+    }
+    header {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Neuromuscular_junction-en.svg/1920px-Neuromuscular_junction-en.svg.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 50px;
+      backdrop-filter: brightness(0.7);
     }
-    h1 {
-      color: #2b6cb0;
+    header h1 {
+      font-size: 3em;
+      margin: 0;
     }
-    p {
-      font-size: 18px;
+    header p {
+      font-size: 1.5em;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 20px auto 0;
     }
-    a {
-      color: #2b6cb0;
+    section {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00bfff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .contacts a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #00bfff;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    .contacts a:hover {
+      background-color: #009acd;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to my page!</h1>
-  <p>Hi, I'm <strong>Pape Faye</strong>.</p>
-  <p>I'm passionate about how molecular dysfunction leads to neuromuscular diseases.</p>
-  <p>Feel free to check out my projects and connect with me!</p>
-  <!-- Example links (add yours if you want) -->
-  <!-- <p><a href="https://github.com/votrepseudo" target="_blank">My GitHub</a></p>
-  <p><a href="https://www.linkedin.com/in/votreprofil" target="_blank">My LinkedIn</a></p> -->
+  <header>
+    <h1>Pape Faye</h1>
+    <p>I’m a PhD student focused on using transcriptomic signatures to diagnose rare neuromuscular diseases.</p>
+  </header>
+
+  <section>
+    <h2>My Interests</h2>
+    <ul>
+      <li>Research</li>
+      <li>Molecular biology</li>
+      <li>Neuromuscular junction</li>
+      <li>Teaching</li>
+      <li>Traveling</li>
+      <li>Bioinformatics</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contacts">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="pape-ibrahima.FAYE@etu.univ-amu.fr">Email</a>
+    </div>
+  </section>
 </body>
 </html>
