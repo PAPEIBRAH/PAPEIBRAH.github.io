@@ -8,7 +8,6 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      scroll-behavior: smooth;
       height: 100%;
     }
 
@@ -26,28 +25,23 @@
       position: relative;
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
+    /* Overlay supprimé temporairement */
 
     .hero-content {
       z-index: 2;
+      position: relative;
     }
 
     .hero h1 {
       font-size: 4em;
       margin: 0;
+      text-shadow: 2px 2px 6px black;
     }
 
     .hero p {
       font-size: 1.5em;
       margin-top: 10px;
+      text-shadow: 1px 1px 4px black;
     }
 
     .hero a.button {
@@ -58,6 +52,7 @@
       color: white;
       font-weight: bold;
       transition: background 0.3s, color 0.3s;
+      text-shadow: none;
     }
 
     .hero a.button:hover {
@@ -78,6 +73,7 @@
       margin-left: 20px;
       font-weight: bold;
       transition: color 0.3s;
+      text-shadow: 1px 1px 3px black;
     }
 
     nav a:hover {
@@ -111,7 +107,7 @@
 <body>
 
   <div class="hero">
-    <div class="overlay"></div>
+    <!-- Overlay retiré -->
     <nav>
       <a href="#about">About Me</a>
       <a href="#projects">Projects</a>
@@ -137,4 +133,17 @@
 
   <section id="education">
     <h2>Education</h2>
-    <p>PhD in Molecular Biology | Master in Neuroscience | Specialized training in bioinformatics and data anal
+    <p>PhD in Molecular Biology | Master in Neuroscience | Specialized training in bioinformatics and data analysis.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Connect with me on <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> or <a href="mailto:your.email@example.com">send me an email</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Pape Faye. All rights reserved.
+  </footer>
+
+</body>
+</html>
